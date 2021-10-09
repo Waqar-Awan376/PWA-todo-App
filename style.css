@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif !important;
+  /* background-image: url(./Assets/banner.jpg); */
+  background-image: url(./Assets/white-banner.jpg);
+  /* IMAGE TAKEN FROM https://unsplash.com/photos/0tgMnMIYQ9Y */
+}
+
+.task-table {
+  padding: 0px;
+  border-radius: 15px;
+  height: 500px !important;
+  overflow-x: auto;
+}
+.dark-mode-text {
+  color: white;
+}
+/* ~~~~~~~~ PROPERTIES ~~~~~~~~~ */
+.light-black-bg {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.gold-clr-font {
+  color: #e8b923;
+}
+.border-radius-15 {
+  border-radius: 15px;
+}
+.border-2px-white {
+  border: 2px solid white;
+}
+/* ~~~~~~~~ PROPERTIES ~~~~~~~~~ */
+
+.slideTwo {
+  width: 120px;
+  height: 30px;
+  background: #333;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
+    0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideTwo:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  height: 2px;
+  width: 90px;
+  background: #111;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
+    0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideTwo label {
+  display: block;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+  left: 4px;
+  background: #fcfff4;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+.slideTwo label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: #333;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px black, 0px 1px 0px rgba(255, 255, 255, 0.9);
+}
+.slideTwo input[type="checkbox"] {
+  visibility: hidden;
+}
+.slideTwo input[type="checkbox"]:checked + label {
+  left: 90px;
+}
+.slideTwo input[type="checkbox"]:checked + label:after {
+  background: white;
+  /*activeColor*/
+}
